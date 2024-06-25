@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>637733483153-3fttub2gm5j6he5ja70opdkg0qloql2q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.637733483153-3fttub2gm5j6he5ja70opdkg0qloql2q</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>637733483153-695ra484lu1qtm0bngbu2smttkurmgde.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC9UaL8UhV1Wv0RcrtWXjS7P2D-3VmKNpY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>637733483153</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>A2.blink.legoyang-owner</string>
+	<key>PROJECT_ID</key>
+	<string>legoyangpaju</string>
+	<key>STORAGE_BUCKET</key>
+	<string>legoyangpaju.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:637733483153:ios:6ec3ec8a446876576ec530</string>
+	<key>DATABASE_URL</key>
+	<string>https://legoyangpaju-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'legoyang_client' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for legoyang_client
+
+  # FIREBASE
+  pod 'FirebaseCore'
+  pod 'FirebaseAuth'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseFirestore'
+  pod 'FirebaseDatabase'
+  pod 'FirebaseStorage'
+  
+  # 통신
+  pod 'Alamofire', '5.1'
+  # 자바스크립트 응용
+  pod 'SwiftSoup'
+  
+  # 네이버
+  pod 'naveridlogin-sdk-ios'
+  # 카카오
+  pod 'KakaoSDK'
+  pod 'KakaoSDKCommon'
+  
+  # 이미지 슬라이드
+  pod 'ImageSlideshow/SDWebImage'
+  # 이미지 비동기화
+  pod 'SDWebImage'
+  pod 'Nuke'
+  # 이미지 GIF
+  pod 'Gifu'
+  
+  # 사진
+  pod 'BSImagePicker', '3.1'
+  
+  # 본인인증 및 결제
+  pod 'Bootpay'
+  
+  # 바텀시트
+  pod 'PanModal'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      config.build_settings.delete('CODE_SIGNING_ALLOWED')
+      config.build_settings.delete('CODE_SIGNING_REQUIRED')
+      config.build_settings['CONFIGURATION_BUILD_DIR'] ='$PODS_CONFIGURATION_BUILD_DIR'
+    end
+  end
+end

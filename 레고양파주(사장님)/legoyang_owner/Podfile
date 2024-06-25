@@ -1,0 +1,43 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'legoyang_owner' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for legoyang_owner
+  
+  # Firebase
+  pod 'FirebaseCore'
+  pod 'FirebaseAuth'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseFirestore'
+  pod 'FirebaseDatabase'
+  pod 'FirebaseStorage'
+  
+  # 통신
+  pod 'Alamofire', '5.1'
+  
+  # 이미지 슬라이드
+  pod 'ImageSlideshow/SDWebImage'
+  
+  # 이미지 비동기화
+  pod 'SDWebImage'
+  pod 'Nuke'
+  
+  # 사진
+  pod 'BSImagePicker'
+  
+  # 부트페이 (다날)
+  pod 'Bootpay'
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      end
+    end
+  end
+end
